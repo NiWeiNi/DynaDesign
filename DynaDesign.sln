@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynaDesign2024", "DynaDesign2024\DynaDesign2024.csproj", "{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DynaDesignCommon", "DynaDesignCommon\DynaDesignCommon.shproj", "{B62EB6FF-3DB6-4EBB-B457-76962D5BEF6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39B4781B-6EE6-440A-849E-7A1681C1AD4D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DynaDesignCommon\DynaDesignCommon.projitems*{3dd0d785-15c2-43b0-82fa-749df6beba18}*SharedItemsImports = 4
+		DynaDesignCommon\DynaDesignCommon.projitems*{b62eb6ff-3db6-4ebb-b457-76962d5bef6e}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
