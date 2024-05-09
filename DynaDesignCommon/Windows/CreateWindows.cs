@@ -1,4 +1,5 @@
-﻿using Windows;
+﻿using System.Windows.Controls;
+using Windows;
 
 namespace DynaDesign
 {
@@ -6,9 +7,9 @@ namespace DynaDesign
     {
         private Windows() { }
 
-        public static void DynaDesignWindow()
+        public static void DynaDesignWindow(Grid grid)
         {
-            DynaDesignWindow window = new DynaDesignWindow();
+            DynaDesignWindow window = new DynaDesignWindow(grid);
             window.ShowDialog();
         }
     }
