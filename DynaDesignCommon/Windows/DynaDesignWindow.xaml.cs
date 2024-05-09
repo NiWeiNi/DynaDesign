@@ -8,7 +8,7 @@ namespace Windows
 {
     internal partial class DynaDesignWindow : Window
     {
-        public DynaDesignWindow(Grid grid)
+        public DynaDesignWindow(Grid grid, double height, double width, string title)
         {
             // Load MaterialDesign libraries as they won't be properly handled by Revit otherwise
             // Code adopted from https://stackoverflow.com/questions/55594443/how-to-include-materialdesignxamltoolkit-to-wpf-class-library
@@ -29,6 +29,9 @@ namespace Windows
             InitializeComponent();
 
             this.Content = grid;
+            this.Height = height;
+            this.Width = width;
+            this.Title = title;
         }
 
         private string GetAssemblyName()

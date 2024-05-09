@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:Windows"
         mc:Ignorable="d"
         x:ClassModifier="internal"
-        Title="DynaDesignWindow" Height="450" Width="800"
         Style="{StaticResource MaterialDesignWindow}">
-    
-    
+
 </Window>
