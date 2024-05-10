@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Windows;
@@ -8,6 +9,9 @@ namespace Windows
 {
     internal partial class DynaDesignWindow : Window
     {
+        public bool IsOK = false;
+        public List<object> outputSelection = new List<object>();
+
         public DynaDesignWindow(Grid grid, double height, double width, string title)
         {
             // Load MaterialDesign libraries as they won't be properly handled by Revit otherwise

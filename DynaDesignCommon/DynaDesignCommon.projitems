@@ -9,6 +9,7 @@
     <Import_RootNamespace>DynaDesignCommon</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Buttons.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Input.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Layout.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Selection.cs" />
