@@ -10,6 +10,15 @@ namespace Controls
     {
         private Layout() { }
 
+        public static Border CreateBorder(Control content, double padding)
+        {
+            Border border = new Border();
+            border.Padding = new Thickness(padding);
+            border.Child = content;
+
+            return border;
+        }
+
         public static Grid CreateGrid(List<object> content, List<double> columnDefinitions, List<double> rowDefinitions,
             List<int> elementColumn, List<int> elementRow)
         {
