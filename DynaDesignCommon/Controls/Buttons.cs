@@ -18,6 +18,23 @@ namespace Controls
             return button;
         }
 
+        public static Button CreateButtonCancel(string text)
+        {
+            Button button = new Button();
+            button.Content = text;
+            button.Click += Button_Click_Cancel;
+
+            return button;
+        }
+
+        private static void Button_Click_Cancel(object sender, System.Windows.RoutedEventArgs e)
+        {
+            DynaDesignWindow window = Window.GetWindow((Button)sender) as DynaDesignWindow;
+
+            if (window != null)
+                window.Close();
+        }
+
         private static void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             DynaDesignWindow window = Window.GetWindow((Button)sender) as DynaDesignWindow;
