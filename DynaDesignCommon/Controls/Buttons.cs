@@ -42,27 +42,40 @@ namespace Controls
             if (window != null)
             {
                 window.IsOK = true;
-
                 List<object> list = new List<object>();
 
-                Grid control = window.Content as Grid;
-                UIElementCollection uIElementCollection = control.Children as UIElementCollection;
-
-                foreach (var element in uIElementCollection)
-                {
-                    if (element is Grid)
-                    {
-
-                    }
-                    else if (element is ComboBox)
-                    {
-                        list.Add((element as ComboBox).SelectedItem);
-                    }
-                }
+                TraverseVisualTree(window.Content, ref list);
 
                 window.outputSelection = list;
                 window.Close();
             }
+        }
+
+        private static void TraverseVisualTree(object treeElement, ref List<object> outList)
+        {
+            if (treeElement is UIElementCollection)
+            {
+                foreach (var element in (treeElement as UIElementCollection))
+                    TraverseVisualTree(element, ref outList);
+            }
+            else if (treeElement is Grid)
+            {
+                TraverseVisualTree((treeElement as Grid).Children, ref outList);
+            }
+            else if (treeElement is Border)
+            {
+                TraverseVisualTree((treeElement as Border).Child, ref outList);
+            }
+            else
+                ProcessVisualTreeElement(treeElement, ref outList);
+        }
+
+        private static void ProcessVisualTreeElement(object treeElement, ref List<object> outList)
+        {
+            if (treeElement is TextBox)
+                outList.Add((treeElement as TextBox).Text);
+            else if (treeElement is ComboBox)
+                outList.Add((treeElement as ComboBox).SelectedItem);
         }
     }
 }
