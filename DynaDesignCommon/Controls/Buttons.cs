@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using Windows;
+using WindowsCreation;
 
 namespace Controls
 {
@@ -27,7 +27,7 @@ namespace Controls
             return button;
         }
 
-        private static void Button_Click_Cancel(object sender, System.Windows.RoutedEventArgs e)
+        private static void Button_Click_Cancel(object sender, RoutedEventArgs e)
         {
             DynaDesignWindow window = Window.GetWindow((Button)sender) as DynaDesignWindow;
 
@@ -35,7 +35,7 @@ namespace Controls
                 window.Close();
         }
 
-        private static void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        private static void Button_Click(object sender, RoutedEventArgs e)
         {
             DynaDesignWindow window = Window.GetWindow((Button)sender) as DynaDesignWindow;
 

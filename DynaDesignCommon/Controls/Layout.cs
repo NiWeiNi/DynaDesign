@@ -10,11 +10,11 @@ namespace Controls
     {
         private Layout() { }
 
-        public static Border CreateBorder(Control content, double padding)
+        public static Border CreateBorder(object content, double padding)
         {
             Border border = new Border();
             border.Padding = new Thickness(padding);
-            border.Child = content;
+            border.Child = content as UIElement;
 
             return border;
         }

@@ -1,19 +1,18 @@
 ﻿using System.Collections.Generic;
-using System.Windows.Controls;
-using Windows;
+using System.Windows;
+using WindowsCreation;
 
-namespace DynaDesign
+
+public class Windows
 {
-    public class Windows
+    private Windows() { }
+
+    public static List<object> CreateWindows(object container, double height, double width, string title)
     {
-        private Windows() { }
+        UIElement uIElement = container as UIElement;
+        DynaDesignWindow window = new DynaDesignWindow(uIElement, height, width, title);
+        window.ShowDialog();
 
-        public static List<object> DynaDesignWindow(Grid grid, double height, double width, string title)
-        {
-            DynaDesignWindow window = new DynaDesignWindow(grid, height, width, title);
-            window.ShowDialog();
-
-            return window.outputSelection;
-        }
+        return window.outputSelection;
     }
 }

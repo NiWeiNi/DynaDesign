@@ -12,63 +12,6 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
-      "FunctionSignature": "DynaDesign.Windows.DynaDesignWindow@var,double,double,string",
-      "Id": "1406ff11c6bb480db7bf43de1a9d1835",
-      "Inputs": [
-        {
-          "Id": "2b0f764207ac486ba41b0a2bc2c48e9e",
-          "Name": "grid",
-          "Description": "var",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "26afa21ebd0e42fd8dcdce487f246a62",
-          "Name": "height",
-          "Description": "double",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "5e77c7c82e7a4826b538addb17e37be0",
-          "Name": "width",
-          "Description": "double",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "80f33cdfbc8a4c3eae0cfb948573ce41",
-          "Name": "title",
-          "Description": "string",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "b27ebda42638410baf80398f92d725a2",
-          "Name": "var[]",
-          "Description": "var[]",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Windows.DynaDesignWindow (grid: var, height: double, width: double, title: string): var[]"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
       "FunctionSignature": "Controls.Layout.CreateGrid@var[],double[],double[],int[],int[]",
       "Id": "0b6aed46708e4f0ab3da1d989c0e4d54",
       "Inputs": [
@@ -429,12 +372,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "\"DynaDesign\";",
+      "Code": "\"DynaDesign \";",
       "Id": "9bf41a9353924d7ab494cfd64b5b1b37",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "76d65b68b7f94bf3ab7578bc41ac9d5b",
+          "Id": "85558297d39a403195d2efa087ec12bf",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -524,19 +467,129 @@
       ],
       "Replication": "Disabled",
       "Description": "Visualize the node's output"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Controls.Layout.CreateBorder@var,double",
+      "Id": "98696b9ade7d47f8877dae037d0515f6",
+      "Inputs": [
+        {
+          "Id": "cb4029254f24418caa77264fa0d3e60f",
+          "Name": "content",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4ef565df8c7c42fcb0991fc9c2d9a080",
+          "Name": "padding",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2ee1e224fb754f68ba7a0a06dedf86e2",
+          "Name": "var",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Layout.CreateBorder (content: var, padding: double): var"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "30;",
+      "Id": "b55cdd505b5944a09f3634e80a060f67",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "0d9506ab8f4f40e7a0d2d66c93172202",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Windows.CreateWindows@var,double,double,string",
+      "Id": "4d0194b2037f44848856f87303406074",
+      "Inputs": [
+        {
+          "Id": "521521916a484d4e9a4a0cbda9165b1f",
+          "Name": "container",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "a5d714b0009e4f9dbe5a0495da12c8f2",
+          "Name": "height",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2d3e02bed8d4457d9f99ca4eb92d395d",
+          "Name": "width",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "72e12646195f4a18850887bd4797761c",
+          "Name": "title",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "480cec8994ab42609deab18d2ee9b791",
+          "Name": "var[]",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Windows.CreateWindows (container: var, height: double, width: double, title: string): var[]"
     }
   ],
   "Connectors": [
     {
-      "Start": "b27ebda42638410baf80398f92d725a2",
-      "End": "21b82ed32e134879ba9ebaba28714fec",
-      "Id": "9916a0717c6e47b1a4356326a5920f39",
-      "IsHidden": "False"
-    },
-    {
       "Start": "40ffae9cb34a4fb895f803266296d277",
-      "End": "2b0f764207ac486ba41b0a2bc2c48e9e",
-      "Id": "7c9164953b1841afad6593730e20fba3",
+      "End": "cb4029254f24418caa77264fa0d3e60f",
+      "Id": "a0a919bb23464f7b8b0a7d5fa358a8fa",
       "IsHidden": "False"
     },
     {
@@ -607,20 +660,20 @@
     },
     {
       "Start": "747c1bd04814454bb6981871b98c391e",
-      "End": "26afa21ebd0e42fd8dcdce487f246a62",
-      "Id": "dd053ffc2ac24f6e8478edc19c3824da",
+      "End": "a5d714b0009e4f9dbe5a0495da12c8f2",
+      "Id": "06439519db554998b0d78bd642aa53f6",
       "IsHidden": "False"
     },
     {
       "Start": "2cc3cff2bed84662ac56e17d2ccd4ffe",
-      "End": "5e77c7c82e7a4826b538addb17e37be0",
-      "Id": "ca1d38d6344e4a38866277b4abe73b6b",
+      "End": "2d3e02bed8d4457d9f99ca4eb92d395d",
+      "Id": "6bf9aa4c5b21447b8a9eafc23c0c84bc",
       "IsHidden": "False"
     },
     {
-      "Start": "76d65b68b7f94bf3ab7578bc41ac9d5b",
-      "End": "80f33cdfbc8a4c3eae0cfb948573ce41",
-      "Id": "677293e2e01540d18593fc6dd5a44f95",
+      "Start": "85558297d39a403195d2efa087ec12bf",
+      "End": "72e12646195f4a18850887bd4797761c",
+      "Id": "00fa911775784228805e66a8992bf253",
       "IsHidden": "False"
     },
     {
@@ -634,6 +687,24 @@
       "End": "926c370d87d74d71a9be617487d25bc7",
       "Id": "1ee10e8216fa4f3d9fe0a6f8af8305ed",
       "IsHidden": "False"
+    },
+    {
+      "Start": "2ee1e224fb754f68ba7a0a06dedf86e2",
+      "End": "521521916a484d4e9a4a0cbda9165b1f",
+      "Id": "678eb087438a4dbcb692afc1a66b6a7e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "0d9506ab8f4f40e7a0d2d66c93172202",
+      "End": "4ef565df8c7c42fcb0991fc9c2d9a080",
+      "Id": "f123a80abff6442492ae638b62dc25c8",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "480cec8994ab42609deab18d2ee9b791",
+      "End": "21b82ed32e134879ba9ebaba28714fec",
+      "Id": "5ea23cb8560f44e6a84d8f21aa53181d",
+      "IsHidden": "False"
     }
   ],
   "Dependencies": [],
@@ -642,11 +713,12 @@
       "Name": "DynaDesign2024.dll",
       "ReferenceType": "ZeroTouch",
       "Nodes": [
-        "1406ff11c6bb480db7bf43de1a9d1835",
         "0b6aed46708e4f0ab3da1d989c0e4d54",
         "9b9d6c3a559742c6bd91514177dac111",
         "443e2b32427049c6a71c28a1c4b4d5fa",
-        "6ec1f1e39b104e6e871ead17e592fb11"
+        "6ec1f1e39b104e6e871ead17e592fb11",
+        "98696b9ade7d47f8877dae037d0515f6",
+        "4d0194b2037f44848856f87303406074"
       ]
     }
   ],
@@ -680,7 +752,7 @@
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
       "Version": "2.13.1.3887",
-      "RunType": "Automatic",
+      "RunType": "Manual",
       "RunPeriod": "1000"
     },
     "Camera": {
@@ -697,16 +769,6 @@
     },
     "ConnectorPins": [],
     "NodeViews": [
-      {
-        "Name": "Windows.DynaDesignWindow",
-        "ShowGeometry": true,
-        "Id": "1406ff11c6bb480db7bf43de1a9d1835",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 939.34334920444712,
-        "Y": 408.50930120294845
-      },
       {
         "Name": "Layout.CreateGrid",
         "ShowGeometry": true,
@@ -814,8 +876,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 691.98124238230116,
-        "Y": 447.78613927877586
+        "X": 1083.883467518898,
+        "Y": 449.82199499377123
       },
       {
         "Name": "Code Block",
@@ -824,8 +886,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 666.4973379029741,
-        "Y": 588.11866402188582
+        "X": 1058.3995630395709,
+        "Y": 590.15451973688118
       },
       {
         "Name": "Buttons.CreateButtonOk",
@@ -854,8 +916,38 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1403.28324158489,
-        "Y": 406.65075494422729
+        "X": 1777.4117150215595,
+        "Y": 407.69918000922667
+      },
+      {
+        "Name": "Layout.CreateBorder",
+        "ShowGeometry": true,
+        "Id": "98696b9ade7d47f8877dae037d0515f6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 746.10312604311832,
+        "Y": 401.20011860639886
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "b55cdd505b5944a09f3634e80a060f67",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 511.47735208471204,
+        "Y": 495.24446745488046
+      },
+      {
+        "Name": "Windows.CreateWindows",
+        "ShowGeometry": true,
+        "Id": "4d0194b2037f44848856f87303406074",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1375.4916846519109,
+        "Y": 401.65809345551259
       }
     ],
     "Annotations": [
@@ -923,13 +1015,13 @@
         "Height": 249.01636671418282,
         "FontSize": 36.0,
         "InitialTop": 839.24172673828593,
-        "InitialHeight": 162.34970004751619,
+        "InitialHeight": 145.68303338084957,
         "TextblockHeight": 106.66666666666667,
         "Background": "#FFC1D676"
       }
     ],
-    "X": 349.18354915895657,
-    "Y": 187.7762490417598,
-    "Zoom": 0.42115517095675276
+    "X": -363.24403632941983,
+    "Y": 57.288119771947777,
+    "Zoom": 0.5763122075387469
   }
 }

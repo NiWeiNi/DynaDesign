@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Windows;
-using System.Windows.Controls;
 
-namespace Windows
+namespace WindowsCreation
 {
     internal partial class DynaDesignWindow : Window
     {
         public bool IsOK = false;
         public List<object> outputSelection = new List<object>();
 
-        public DynaDesignWindow(Grid grid, double height, double width, string title)
+        public DynaDesignWindow(UIElement container, double height, double width, string title)
         {
             // Load MaterialDesign libraries as they won't be properly handled by Revit otherwise
             // Code adopted from https://stackoverflow.com/questions/55594443/how-to-include-materialdesignxamltoolkit-to-wpf-class-library
@@ -32,7 +31,7 @@ namespace Windows
             Resources.MergedDictionaries.Add(resourceDictionary);
             InitializeComponent();
 
-            this.Content = grid;
+            this.Content = container;
             this.Height = height;
             this.Width = width;
             this.Title = title;
