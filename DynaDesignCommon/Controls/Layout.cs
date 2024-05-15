@@ -46,7 +46,7 @@ namespace Controls
 
             for (int i = 0; i < content.Count; i++)
             {
-                Control control = content[i] as Control;
+                FrameworkElement control = content[i] as FrameworkElement;
 
                 if (!grid.Children.Contains(control) && content[i] != null)
                 {
@@ -72,7 +72,7 @@ namespace Controls
             return grid;
         }
 
-        private static void RemoveControlFromParent(Control control)
+        private static void RemoveControlFromParent(FrameworkElement control)
         {
             object currentParent = VisualTreeHelper.GetParent(control);
 

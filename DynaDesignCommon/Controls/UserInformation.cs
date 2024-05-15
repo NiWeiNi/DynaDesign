@@ -8,10 +8,22 @@ namespace Controls
 
         public static Label CreateLabel(string text)
         {
-            Label label = new Label();
-            label.Content = text;
+            Label label = new Label
+            {
+                Content = text
+            };
 
             return label;
+        }
+
+        public static TextBlock CreateTextBlock(string text)
+        {
+            TextBlock textBlock = new TextBlock
+            {
+                Text = text
+            };
+
+            return textBlock;
         }
     }
 }

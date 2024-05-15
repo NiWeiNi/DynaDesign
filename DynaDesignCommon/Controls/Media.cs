@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
-namespace DynaDesignCommon.Controls
+namespace Controls
 {
     public class Media
     {

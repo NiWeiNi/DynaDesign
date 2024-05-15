@@ -10,8 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Buttons.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DataDisplay.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Input.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Layout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Media.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Selection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\UserInformation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Windows\CreateWindows.cs" />
