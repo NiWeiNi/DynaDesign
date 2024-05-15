@@ -32,8 +32,8 @@ namespace WindowsCreation
             InitializeComponent();
 
             this.Content = container;
-            this.Height = height;
-            this.Width = width;
+            this.MinHeight = height;
+            this.MinWidth = width;
             this.Title = title;
         }
 
