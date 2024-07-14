@@ -11,4 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Styles\TextBlock.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)pkg.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

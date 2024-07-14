@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynaDesign2024", "DynaDesign2024\DynaDesign2024.csproj", "{3DD0D785-15C2-43B0-82FA-749DF6BEBA18}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DynaDesignCommon", "DynaDesignCommon\DynaDesignCommon.shproj", "{B62EB6FF-3DB6-4EBB-B457-76962D5BEF6E}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DynaDesignZeroTouch", "DynaDesignZeroTouch\DynaDesignZeroTouch.shproj", "{B62EB6FF-3DB6-4EBB-B457-76962D5BEF6E}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DynaDesignNodeModels", "DynaDesignNodeModels\DynaDesignNodeModels.shproj", "{5FD30954-813A-4E4A-A8C8-6A06784491E2}"
 EndProject
@@ -45,10 +45,10 @@ Global
 		SolutionGuid = {39B4781B-6EE6-440A-849E-7A1681C1AD4D}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		DynaDesignCommon\DynaDesignCommon.projitems*{00094d63-0617-48e1-af84-1fd100c95fbd}*SharedItemsImports = 4
-		DynaDesignCommon\DynaDesignCommon.projitems*{3dd0d785-15c2-43b0-82fa-749df6beba18}*SharedItemsImports = 4
+		DynaDesignZeroTouch\DynaDesignZeroTouch.projitems*{00094d63-0617-48e1-af84-1fd100c95fbd}*SharedItemsImports = 4
+		DynaDesignZeroTouch\DynaDesignZeroTouch.projitems*{3dd0d785-15c2-43b0-82fa-749df6beba18}*SharedItemsImports = 4
 		DynaDesignNodeModels\DynaDesignNodeModels.projitems*{5fd30954-813a-4e4a-a8c8-6a06784491e2}*SharedItemsImports = 13
-		DynaDesignCommon\DynaDesignCommon.projitems*{b62eb6ff-3db6-4ebb-b457-76962d5bef6e}*SharedItemsImports = 13
+		DynaDesignZeroTouch\DynaDesignZeroTouch.projitems*{b62eb6ff-3db6-4ebb-b457-76962d5bef6e}*SharedItemsImports = 13
 		DynaDesignNodeModels\DynaDesignNodeModels.projitems*{b7255601-28b6-4188-a9db-0edc9e40681d}*SharedItemsImports = 4
 		DynaDesignNodeModels\DynaDesignNodeModels.projitems*{fc17cf0d-37e9-4c1f-9bb2-b09f911eb503}*SharedItemsImports = 4
 	EndGlobalSection

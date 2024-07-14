@@ -1,0 +1,21 @@
+{
+  "license": "MIT",
+  "file_hash": null,
+  "name": "CustomNodeModel",
+  "version": "1.0.0",
+  "description": "Sample node",
+  "group": "CustomNodes",
+  "keywords": [ "grid", "random" ],
+  "dependencies": [],
+  "contents": "Sample node",
+  "engine_version": "2.13.0",
+  "engine": "dynamo",
+  "engine_metadata": "",
+  "site_url": "",
+  "repository_url": "",
+  "contains_binaries": true,
+  "node_libraries": [
+    "DynaDesignNM2023, Version=1.0.0, Culture=neutral, PublicKeyToken=null",
+    "DynaDesign2023, Version=1.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

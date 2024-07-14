@@ -3,13 +3,12 @@ using Dynamo.Graph.Nodes;
 using Dynamo.Utilities;
 using ProtoCore.AST.AssociativeAST;
 using System.Collections.Generic;
-using System.Windows;
 
 namespace Styles
 {
     [NodeName("TextBlock Styles")]
-    [NodeCategory("Styles")]
-    [NodeDescription("An example drop down node.")]
+    [NodeCategory("Styles.TextBlock")]
+    [NodeDescription("Styles for TextBlock")]
     [IsDesignScriptCompatible]
     public class TextBlock : DSDropDownBase
     {
@@ -21,13 +20,12 @@ namespace Styles
 
             var newItems = new List<DynamoDropDownItem>()
             {
-                new DynamoDropDownItem("Tywin", 0),
-                new DynamoDropDownItem("Cersei", 1),
-                new DynamoDropDownItem("Hodor",2)
+                new DynamoDropDownItem("MaterialDesignBodySmallTextBlock", "MaterialDesignBodySmallTextBlock"),
+                new DynamoDropDownItem("MaterialDesignBodyMediumTextBlock", "MaterialDesignBodyMediumTextBlock"),
+                new DynamoDropDownItem("MaterialDesignBodyLargeTextBlock","MaterialDesignBodyLargeTextBlock")
             };
 
             Items.AddRange(newItems);
-            // Pre-select first element
             SelectedIndex = 0;
 
             return SelectionState.Restore;
@@ -36,15 +34,13 @@ namespace Styles
         public override IEnumerable<AssociativeNode> BuildOutputAst(List<AssociativeNode> inputAstNodes)
         {
             // Build an AST node for the type of object contained in your Items collection.
-
             if (Items.Count == 0 || SelectedIndex == -1)
             {
-                MessageBox.Show("No items");
                 return new[] { AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), AstFactory.BuildNullNode()) };
             }
 
-            var intNode = AstFactory.BuildIntNode((int)Items[SelectedIndex].Item);
-            var assign = AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), intNode);
+            var stringNode = AstFactory.BuildStringNode(Items[SelectedIndex].Item.ToString());
+            var assign = AstFactory.BuildAssignment(GetAstIdentifierForOutputIndex(0), stringNode);
 
             return new List<AssociativeNode> { assign };
         }
